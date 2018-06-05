@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  countText: {fileID: 0}
-  winText: {fileID: 0}
+  countText: {fileID: 2023482906}
+  winText: {fileID: 893736720}
 --- !u!54 &7703438
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -415,7 +415,7 @@ Transform:
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &328233225
 GameObject:
@@ -832,7 +832,7 @@ Transform:
   - {fileID: 1772178641}
   - {fileID: 1802790443}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &832283912
 Prefab:
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 893736721}
   - component: {fileID: 893736720}
   m_Layer: 5
-  m_Name: Win Text
+  m_Name: WinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1047,7 +1047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Win Text
+  m_Text: 
 --- !u!222 &893736721
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1099,7 +1099,7 @@ Transform:
   - {fileID: 1237684337}
   - {fileID: 1387116034}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1072296372
 Prefab:
@@ -1260,7 +1260,7 @@ RectTransform:
   - {fileID: 2023482905}
   - {fileID: 893736719}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1473,7 +1473,6 @@ GameObject:
   - component: {fileID: 1292600856}
   - component: {fileID: 1292600855}
   - component: {fileID: 1292600860}
-  - component: {fileID: 1292600861}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1563,28 +1562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7703432}
---- !u!114 &1292600861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1292600854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8d3968294210ba4a9d2bb96dfa74a16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 7703436}
-  m_AutoTargetPlayer: 1
-  m_UpdateType: 0
-  m_MoveSpeed: 3
-  m_TurnSpeed: 1
-  m_RollSpeed: 0.2
-  m_FollowVelocity: 0
-  m_FollowTilt: 1
-  m_SpinTurnLimit: 90
-  m_TargetVelocityLowerLimit: 4
-  m_SmoothTurnTime: 0.2
 --- !u!1 &1351068825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,8 +2221,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1763876659}
   m_LocalRotation: {x: 0.011702921, y: 0.06374659, z: 0.11760612, w: 0.99094313}
-  m_LocalPosition: {x: 12.094, y: 1.991, z: -22.296}
-  m_LocalScale: {x: 0.14923182, y: 0.4700131, z: 0.98438483}
+  m_LocalPosition: {x: 12.094, y: 1.28, z: -19.061}
+  m_LocalScale: {x: 0.14923197, y: 0.470013, z: 2.8603044}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -2614,7 +2591,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1959687882
 Prefab:
@@ -2804,7 +2781,7 @@ GameObject:
   - component: {fileID: 2023482907}
   - component: {fileID: 2023482906}
   m_Layer: 5
-  m_Name: Count Text
+  m_Name: CountText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2860,9 +2837,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Count Text
-
-'
+  m_Text: Score
 --- !u!222 &2023482907
 CanvasRenderer:
   m_ObjectHideFlags: 0

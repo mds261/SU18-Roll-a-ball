@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class maincamera: MonoBehaviour {
+public class CompleteCameraController : MonoBehaviour {
 
     public GameObject player;       //Public variable to store a reference to the player game object
 
